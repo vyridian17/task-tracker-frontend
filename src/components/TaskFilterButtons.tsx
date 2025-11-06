@@ -22,7 +22,7 @@ export function TaskFilterButtons({ currentFilter, stats, onFilterChange }: Task
 			<button
 				style={currentFilter === 'completed' ? { color: 'green' } : {}}
 				onClick={() => onFilterChange('completed')}
-				value={'completed'}>Completed ({stats.completed})
+				value={'completed'}>Completed ({stats.completed}) ({stats.completion_rate}%)
 			</button>
 		</>
 	);

@@ -8,9 +8,9 @@ export interface Task {
 
 export interface TaskStats {
 	total: number;
-	complete: number;
-	active: number;
 	completed: number;
+	active: number;
+	completion_rate: number;
 }
 
 export interface PaginatedResponse<T> {

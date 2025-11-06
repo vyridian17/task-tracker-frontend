@@ -29,7 +29,7 @@ describe('App Component', () => {
 	const mockStats: TaskStats = {
 		total: 2,
 		completed: 1,
-		complete: 1,
+		completion_rate: 1,
 		active: 1,
 	};
 
@@ -387,7 +387,7 @@ describe('App Component', () => {
 			const updatedStats: TaskStats = {
 				total: 3,
 				completed: 1,
-				complete: 1,
+				completion_rate: 1,
 				active: 2,
 			};
 			vi.mocked(Tasks.prototype.getStats).mockResolvedValueOnce(updatedStats);

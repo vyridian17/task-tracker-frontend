@@ -16,8 +16,8 @@ function App() {
 	const [taskFilter, setTaskFilter] = useState<TaskFilter>('all');
 	const [taskStats, setTaskStats] = useState<TaskStats>({
 		active: 0,
-		complete: 0,
 		completed: 0,
+		completion_rate: 0,
 		total: 0
 	});
 

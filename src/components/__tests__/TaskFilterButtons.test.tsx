@@ -7,8 +7,8 @@ import type { TaskStats } from '../../types/task';
 describe('TaskFilterButtons', () => {
 	const mockStats: TaskStats = {
 		total: 10,
-		complete: 7,
 		completed: 7,
+		completion_rate: 7,
 		active: 3,
 	};
 
@@ -193,8 +193,8 @@ describe('TaskFilterButtons', () => {
 		const mockOnFilterChange = vi.fn();
 		const zeroStats: TaskStats = {
 			total: 0,
-			complete: 0,
 			completed: 0,
+			completion_rate: 0,
 			active: 0,
 		};
 
